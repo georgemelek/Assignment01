@@ -1,92 +1,111 @@
-/* ################
-  INDEX PAGE
-################  */
-#welcome-section{
-    height: 100vh;
-    width: 100%;
-    background-image: url("../images/img1.jpg");
-    background-size: cover;
-    background-position: center;
+* {
+	margin: 0;
+	padding: 0;
 }
-
-.overlay{
-    height: 100%;
-    width:100%;
-    position: absolute;
-    z-index: 3;
-    background: rgba(0,0,0,0.1)
+body {
+	font-family: 'Poppins', sans-serif;
 }
-
-/* navbar */
-.page-active{
-    color: #fff !important;
-    text-decoration: underline;
+.wrapper {
+	width: 1170px;
+	margin: auto;
 }
-
-
-/* donation */
-#donation-section{
-    
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
 }
-
-#other-pages-section{
-    background-color: #d2edff;
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
 }
-/* footer */
-.footer-links-container a{
-    color: white;
+.nav-area li {
+	display: inline-block;
 }
-.footer-links-container ul{
-    list-style-type: none;
-    text-decoration: underline;
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
 }
-.footer-links-container{
-    background-color: #000;
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
 }
-
-.copyright-container{
-    background-color: #000;
+.logo {
+	float: left;
 }
-
-
-
-
-
-/* ################
-  ABOUT PAGE
-################  */
-.text{
-  margin:   25px 50px 75px;
-  color: rgb(211, 211, 211);
-  font-size: 20px;
+.logo img {
+	width: 100%;
+	padding: 15px 0;
 }
-
-.footer {
-  bottom: 0;
-  width: 100%;
-  height: 120px;
-  text-align: center;
-  font-size: 16px;
+.welcome-text {
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	margin: 20% 30%;
+	text-align: center;
 }
-
-footer ul {
-  list-style-type: none;
-  display: inline-block;
-  vertical-align: bottom;
-
+.welcome-text h1 {
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 60px;
 }
-
-footer li {
-  display: inline;
-  padding: 0 50px 0 0;
+.welcome-text h1 span {
+	color: #00fecb;
 }
-
-.footer li a {
-  text-decoration: none;
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
 }
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/*resposive*/
 
-
-
-/* ################
-  CONTACT PAGE
-################  */
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: ;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
