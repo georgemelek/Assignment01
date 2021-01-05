@@ -109,3 +109,13 @@ header {
 		font-size: 30px;
 	}
 }
+
+.gallery{
+	margin: 10px 50px;
+}
+.gallery img{
+	transition: 1s;
+	padding: 15px;
+	width: 200px;
+}
+
