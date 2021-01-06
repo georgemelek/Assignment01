@@ -109,6 +109,10 @@ header {
 		font-size: 30px;
 	}
 }
+.about-us-title{
+	color: white;
+	text-align: center;
+}
 
 .gallery{
 	margin: 10px 50px;
@@ -121,4 +125,9 @@ header {
 .text{
 	background-color: white;
 	color: black;
+	width: 900px;
+  border: 10px solid black;
+  padding: 50px;
+  margin: auto;
+  font-size: 5;
 }
